@@ -6,8 +6,9 @@
 -- User Agent Parse Tables
 
 -- Table creation
---      Step 1) Create stage table
---      Step 2) Create main table
+--      Step 1) Create Data Base and Schema
+--      Step 2) Create stage table
+--      Step 3) Create main table
 
 -- note: there is no copy statment. 
 -- The python program writes into snowflake.
@@ -15,10 +16,15 @@
 ---------------------------------------------------
 ------------         Step 1            ------------
 ---------------------------------------------------
-
 USE WAREHOUSE LOAD_WH;
+CREATE DATABASE USER_DATA;
+CREATE SCHEMA USERSTACK;
 
-CREATE OR REPLACE TABLE USER_DATA.STAGE.USER_AGENT_MAPPER(
+---------------------------------------------------
+------------         Step 2            ------------
+---------------------------------------------------
+
+CREATE OR REPLACE TABLE USERSTACK.STAGE.USER_AGENT_MAPPER(
       user_agent                VARCHAR()
     , ua_type                   VARCHAR()
     , ua_brand                  VARCHAR()
@@ -50,9 +56,9 @@ CREATE OR REPLACE TABLE USER_DATA.STAGE.USER_AGENT_MAPPER(
 
 
 ---------------------------------------------------
-------------         Step 2            ------------
+------------         Step 3            ------------
 ---------------------------------------------------
-CREATE OR REPLACE TABLE USER_DATA.PUBLIC.USER_AGENT_MAPPER(
+CREATE OR REPLACE TABLE USER_DATA.USERSTACK.USER_AGENT_MAPPER(
       user_agent                VARCHAR()
     , ua_type                   VARCHAR()
     , ua_brand                  VARCHAR()
