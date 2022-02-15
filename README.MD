@@ -42,10 +42,34 @@ to do: engineering design diagram
 ______________________________________________________________________
 ______________________________________________________________________
 
-### Files: 
+### Files Name Descriptions: 
 ```
- 
+user-agent-parse 
+    config.yaml:
+        This is a yaml configuration file
 
+    initiate_app.sh:
+        Preps program and creates venv and installs needed packages in EC2
+    
+    main.py:
+        This is the main parse script that turns data to dataframe and writes to snowflake
+    
+    requirements.txt:
+        python lib requieremnts
+    
+    user_agent_bash.sh:
+        This script is what is called in the cron task, and preps venv and runs main.py
+    
+    log_file.log:
+        error log file
+
+snowflake folder
+    ddl.sql:
+        Shows how to create a table in snowflake and defines table values    
+
+cron folder:
+    crontab.txt:
+        Show cron schedule and path to run .sh program
 ```
 ______________________________________________________________________
 ______________________________________________________________________
