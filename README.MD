@@ -8,8 +8,14 @@
 ______________________________________________________________________
 ______________________________________________________________________
 
-### USERSTACK.com User Agent Parse and Snowflake Integration
+### Summary: 
 ```
+This repo is an end-to-end example on how to parse user agent strings
+using the USERSTACK API, automation through Cron EC2, and data insertion to 
+a Snowflake table. 
+
+
+About USERSTACK:
 USERSTACK.com is a great API if you are looking to parse out user agent
 information. Userstack offers a real-time, easy-to-use REST API interface 
 capable of parsing User-Agent strings to accurately detect device, browser 
@@ -18,6 +24,41 @@ and operating system information.
 Documetation can be found: https://userstack.com/documentation
 
 The process requieres you to create an account. Paid account 
+
+
+Limitations: 
+
+```
+______________________________________________________________________
+______________________________________________________________________
+### Design
+
+```
+to do: engineering design diagram
+
+```
+
+
+______________________________________________________________________
+______________________________________________________________________
+
+### Files: 
+```
+ 
+
+```
+______________________________________________________________________
+______________________________________________________________________
+### Steps: 
+```
+ 
+
+```
+______________________________________________________________________
+______________________________________________________________________
+### Input Data Example: 
+```
+ 
 
 ```
 ______________________________________________________________________
