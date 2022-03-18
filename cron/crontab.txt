@@ -1,0 +1,2 @@
+
+30 21 * * * sh .../user_agent_parse/user_agent_bash.sh;

@@ -28,6 +28,11 @@ The process requieres you to create an account. Paid account
 
 Limitations: 
 
+
+Special note:
+Paths were removed. To utilize this code in production you will need to point
+to your corn path
+
 ```
 ______________________________________________________________________
 ______________________________________________________________________
