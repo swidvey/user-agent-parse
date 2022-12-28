@@ -1,0 +1,16 @@
+# yaml 
+main:
+  home_directory: /data/
+  logfile_path: log_file.log
+  sender: ''
+  subject: 'Issue: User Agent Parser - AUTOMATED MESSAGE, DO NOT REPLY'
+  recipients: ''
+
+access:
+  userstack_key: user_stack_access_key
+  user: my_user_name
+  password: my_password
+  account:   ''
+  warehouse: 'ETL_WH'
+  database: 'MY_DB'
+  schema: 'STAGE'

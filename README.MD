@@ -11,7 +11,7 @@ ______________________________________________________________________
 ### Summary: 
 ```
 This repo is an end-to-end example on how to parse user agent strings
-using the USERSTACK API, automation through Cron EC2, and data insertion to 
+using the USERSTACK API, automation through Cron and AWS EC2, and data insertion to 
 a Snowflake table. 
 
 
@@ -23,10 +23,21 @@ and operating system information.
 
 Documetation can be found: https://userstack.com/documentation
 
-The process requieres you to create an account. Paid account 
+
 
 
 Limitations: 
+The process requires user to create an USERSTACK account. Paid account For large parse 
+This example requires snowflake access. 
+
+Special note:
+Paths were removed. To utilize this code in production you will need to point
+to your cron path
+
+It is assumed you have a data table with User agents already avaliable. 
+As a test you can use the User Agent data example given by USERSTACK
+
+"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"
 
 ```
 ______________________________________________________________________
@@ -34,7 +45,7 @@ ______________________________________________________________________
 ### Design
 
 ```
-to do: engineering design diagram
+Snowflake data -> ec2 -> API call -> clean parsed data in ec2 -> load to SNowflake 
 
 ```
 
@@ -49,7 +60,7 @@ user-agent-parse
         This is a yaml configuration file
 
     initiate_app.sh:
-        Preps program and creates venv and installs needed packages in EC2
+        Preps program and creates venv and installs needed packages in EC2.
     
     main.py:
         This is the main parse script that turns data to dataframe and writes to snowflake
@@ -69,21 +80,14 @@ snowflake folder
 
 cron folder:
     crontab.txt:
-        Show cron schedule and path to run .sh program
+        Shows cron schedule and path to run .sh program
 ```
 ______________________________________________________________________
 ______________________________________________________________________
 ### Steps: 
 ```
 to do: add steps to run program
-
-```
-______________________________________________________________________
-______________________________________________________________________
-### Input Data Example: 
-```
-to do: add input example and output 
-
+to do: add steps to run program
 ```
 ______________________________________________________________________
 ______________________________________________________________________
