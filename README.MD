@@ -11,7 +11,7 @@ ______________________________________________________________________
 ### Summary: 
 ```
 This repo is an end-to-end example on how to parse user agent strings
-using the USERSTACK API, automation through Cron EC2, and data insertion to 
+using the USERSTACK API, automation through Cron and AWS EC2, and data insertion to 
 a Snowflake table. 
 
 
@@ -23,15 +23,16 @@ and operating system information.
 
 Documetation can be found: https://userstack.com/documentation
 
-The process requieres you to create an account. Paid account 
+
 
 
 Limitations: 
-
+The process requires user to create an USERSTACK account. Paid account For large parse 
+This example requires snowflake access. 
 
 Special note:
 Paths were removed. To utilize this code in production you will need to point
-to your corn path
+to your cron path
 
 ```
 ______________________________________________________________________
@@ -81,7 +82,7 @@ ______________________________________________________________________
 ### Steps: 
 ```
 to do: add steps to run program
-
+to do: add steps to run program
 ```
 ______________________________________________________________________
 ______________________________________________________________________
