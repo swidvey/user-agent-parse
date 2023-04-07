@@ -12,7 +12,7 @@ ______________________________________________________________________
 ```
 This repo is an end-to-end example on how to parse user agent strings
 using the USERSTACK API, automation through Cron and AWS EC2, and data insertion to 
-a Snowflake table. 
+a Snowflake table. This code also shows a basic email function for status updates. 
 
 
 About USERSTACK:
@@ -86,8 +86,9 @@ ______________________________________________________________________
 ______________________________________________________________________
 ### Steps: 
 ```
-to do: add steps to run program
-to do: add steps to run program
+1. git pull into EC2
+2. Run in initiate_app.sh
+3. set cron schedule
 ```
 ______________________________________________________________________
 ______________________________________________________________________
